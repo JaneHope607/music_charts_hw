@@ -11,9 +11,27 @@
 .chart-list {
     display: flex;
     text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 html, body {
-    color: pink;
-    background-color: yellow;
+    color: rgb(255, 80, 109);
+    background-color: rgb(238, 238, 147);
+}
+
+li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+audio {
+    justify-content: center;
+    padding: 20px;
+}
+
+img {
+    justify-content: center;
+    float: left;
+    padding: 20px;
 }
