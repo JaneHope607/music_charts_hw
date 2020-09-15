@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SongList from '../components/SongList.js';
-import SongDetail from '../components/SongDetail.js';
 
 class MusicContainer extends Component {
     constructor(){
@@ -8,10 +7,7 @@ class MusicContainer extends Component {
 
         this.state = {
             songs: [],
-            selectedSong: '',
         };
-
-        this.handleSongSelected = this.handleSongSelected.bind(this);
     }
 
     componentDidMount() {
@@ -22,16 +18,11 @@ class MusicContainer extends Component {
             .catch(err => console.log(err));
     }
 
-    handleSongSelected(id) {
-        this.setState({ selectedSong : id});
-    }
-
     render() {
         return (
             <div className="chart-box">
                 <h2 className="header">UK Top 20 Charts</h2>
-                <SongList songs={this.state.songs} handleSongSelected={this.handleSongSelected} />
-                <SongDetail />
+                <SongList songs={this.state.songs} />
             </div>
         )
     } 

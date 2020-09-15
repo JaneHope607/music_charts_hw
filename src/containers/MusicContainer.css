@@ -1,0 +1,19 @@
+.chart-box {
+    text-align: center;
+    margin-left: 80px;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.chart-list {
+    display: flex;
+    text-align: center;
+}
+
+html, body {
+    color: pink;
+    background-color: yellow;
+}
