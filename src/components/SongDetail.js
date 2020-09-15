@@ -2,7 +2,9 @@ import React from 'react';
 
 const SongDetail = (props) => {
     return (
-        null
+        <>
+            <p>details</p>
+        </>
     )
 }
 
